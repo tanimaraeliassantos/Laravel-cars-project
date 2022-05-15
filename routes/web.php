@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Route to users
+Route::get('/users', function (){
+    return "Welcome to the users page";
+});
+
+
+//firstproject.com == /
+//firstproject.com/users == /users
