@@ -34,6 +34,11 @@ Route::get('/users', function () {
     'course'=> 'Laravel Beginner']);
 });
 
+//Route to users - function
+Route::get('/users', function () {
+    return redirect('/');
+})
+;
 
 //firstproject.com == /
 //firstproject.com/users == /users
