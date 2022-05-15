@@ -14,31 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
-// Route to users
-Route::get('/users', function (){
-    return "Welcome to the users page";
-});
 
-//Route to users - Array(JSON)
-Route::get('/users', function () {
-    return ['PHP', 'HTML', 'Laravel'];
-});
-
-//Route to users - JSON object
-Route::get('/users', function () {
-    return response()->json([
-        'name'=> 'Tanimara',
-    'course'=> 'Laravel Beginner']);
-});
-
-//Route to users - function
-Route::get('/users', function () {
-    return redirect('/');
-})
-;
 
 //firstproject.com == /
 //firstproject.com/users == /users
