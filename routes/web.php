@@ -22,6 +22,18 @@ Route::get('/users', function (){
     return "Welcome to the users page";
 });
 
+//Route to users - Array(JSON)
+Route::get('/users', function () {
+    return ['PHP', 'HTML', 'Laravel'];
+});
+
+//Route to users - JSON object
+Route::get('/users', function () {
+    return response()->json([
+        'name'=> 'Tanimara',
+    'course'=> 'Laravel Beginner']);
+});
+
 
 //firstproject.com == /
 //firstproject.com/users == /users
