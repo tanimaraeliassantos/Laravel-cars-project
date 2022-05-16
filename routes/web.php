@@ -17,7 +17,13 @@ use App\Http\Controllers\ProductsController;
 
 Route::get('/products', [ProductsController::class, 'index']);
 
-Route::get('/products/{id}', [ProductsController::class, 'show']);
+// // Pattern is integer
+// Route::get('/products/{id}',
+// [ProductsController::class, 'show']) ->where('id', '[0-9]+');
+
+// Pattern is a string
+Route::get('/products/{name}',
+    [ProductsController::class, 'show']) ->where('name', '[a-zA-Z]+');
 
 //  /products = all products
 // /products/productName
