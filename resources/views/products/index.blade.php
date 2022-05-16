@@ -7,8 +7,11 @@
 </head>
 <body>
     <h1>Products</h1>
-  <p>
-      {{  $products }}
-  </p>
+    <a href="{{ route('products') }}">Products</a>
+  
 </body>
 </html>
+
+@if ()
+    
+@endif
