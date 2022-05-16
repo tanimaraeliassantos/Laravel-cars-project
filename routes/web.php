@@ -17,7 +17,8 @@ use App\Http\Controllers\ProductsController;
 //Laravel 8(New)
 Route::get('/products', [ProductsController::class, 'index']);
 
-//Laravel
+//Laravel 8 (Also New)
+Route::get('/products', 'App\Http\Controllers\ProductsController@index');
 
 
 //firstproject.com == /
