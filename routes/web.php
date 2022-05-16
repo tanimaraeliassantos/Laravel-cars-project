@@ -16,12 +16,7 @@ use App\Http\Controllers\ProductsController;
 
 //Laravel 8(New)
 Route::get('/products', [ProductsController::class, 'index']);
-
-//Laravel 8 (Also New)
-Route::get('/products', 'App\Http\Controllers\ProductsController@index');
-
-//Before Laravel 8
-Route::get('/products', 'ProductsController@index');
+Route::get('/products/about', [ProductsController::class, 'about']);
 
 //firstproject.com == /
 //firstproject.com/users == /users
