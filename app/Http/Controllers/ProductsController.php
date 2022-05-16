@@ -26,7 +26,14 @@ class ProductsController extends Controller
         return 'About us Page';
     }
 
-    public function show($id) {
-        return $id;
+    public function show($name) {
+        $data = [
+            'opel' => 'Opel',
+            'toyota' => 'Toyota'
+        ];
+
+        return view ('products.index', [
+            'products' => $data[$name] ?? 'Product ' . $name . ' does not exist.'
+        ]);
     }
 }
