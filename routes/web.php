@@ -25,6 +25,13 @@ Route::get('/products', [ProductsController::class, 'index']);
 Route::get('/products/{name}',
     [ProductsController::class, 'show']) ->where('name', '[a-zA-Z]+');
 
+// Pattern is a string/integer
+Route::get('/products/{name}/{id}',
+    [ProductsController::class, 'show']) ->where([
+        'name' => '[a-z]+',
+        'id' => '[0-9]+'
+    ]);
+
 //  /products = all products
 // /products/productName
 // /products/id
