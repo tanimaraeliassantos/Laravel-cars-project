@@ -9,7 +9,7 @@ class PostsController extends Controller
 {
     public function index()
     {
-      $posts = DB::select('select * from posts WHERE id = 1');
+      $posts = DB::select('select * from posts WHERE id = ?', [1]);
 
       dd($posts);
     }
