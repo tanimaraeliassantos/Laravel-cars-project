@@ -7,12 +7,12 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## About Laravel
+
 -   Tanimara here you are!
     Tutorial on Laravel from https://www.youtube.com/watch?v=C3Z-PzXoDxY&list=PLFHz2csJcgk_3VJwzVoeyMuC1rdBcfiLv&index=23
 
 Currently working on Query builder.
-
-## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
