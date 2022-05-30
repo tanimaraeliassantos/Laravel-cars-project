@@ -11,8 +11,7 @@ class PostsController extends Controller
     {
         $id = 1;
       $posts = DB::table('posts')
-        ->select('title')
-        ->distinct()
+        ->orderBy('title', 'asc')
         ->get();
 
       dd($posts);
