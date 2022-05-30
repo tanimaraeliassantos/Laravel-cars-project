@@ -11,7 +11,8 @@ class PostsController extends Controller
     {
         $id = 1;
       $posts = DB::table('posts')
-        ->whereNotNull('title')
+        ->select('title')
+        ->distinct()
         ->get();
 
       dd($posts);
