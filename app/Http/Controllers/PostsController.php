@@ -11,7 +11,7 @@ class PostsController extends Controller
     {
         $id = 1;
       $posts = DB::table('posts')
-        ->where('id', $id)
+        ->where('created_at', '>', now()->subDay())
         ->get();
 
       dd($posts);
