@@ -11,8 +11,9 @@ class PostsController extends Controller
     {
         $id = 1;
       $posts = DB::table('posts')
-        ->orderBy('created_at','desc')
-        ->first();
+        ->inser([
+          'title' => 'New Post', 'body' => 'New body'
+        ]);
 
       dd($posts);
     }
