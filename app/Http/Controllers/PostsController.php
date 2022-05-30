@@ -11,7 +11,7 @@ class PostsController extends Controller
     {
         $id = 1;
       $posts = DB::table('posts')
-        ->whereBetween('id', [1, 5])
+        ->whereNotNull('title')
         ->get();
 
       dd($posts);
