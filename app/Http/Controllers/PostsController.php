@@ -12,6 +12,7 @@ class PostsController extends Controller
         $id = 1;
       $posts = DB::table('posts')
         ->where('created_at', '>', now()->subDay())
+        ->orWhere('title', 'Prof')
         ->get();
 
       dd($posts);
