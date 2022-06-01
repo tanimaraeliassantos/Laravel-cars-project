@@ -11,7 +11,8 @@ class PostsController extends Controller
     {
         $id = 1;
       $posts = DB::table('posts')
-        ->avg('id');
+        ->where('id', '=', 5)
+        ->delete();
       dd($posts);
     }
 }
