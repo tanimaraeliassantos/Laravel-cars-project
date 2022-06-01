@@ -11,10 +11,7 @@ class PostsController extends Controller
     {
         $id = 1;
       $posts = DB::table('posts')
-        ->inser([
-          'title' => 'New Post', 'body' => 'New body'
-        ]);
-
+        ->count();
       dd($posts);
     }
 }
