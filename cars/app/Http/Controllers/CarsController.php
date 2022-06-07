@@ -17,7 +17,7 @@ class CarsController extends Controller
         // $cars = Car::where('name', '=', 'Tesla')
         // ->firstOrFail();
         
-        print_r(Car::sum('founded'));
+        print_r(Car::avg('founded'));
         
         // return view('cars.index', [
         //     'cars' =>$cars
