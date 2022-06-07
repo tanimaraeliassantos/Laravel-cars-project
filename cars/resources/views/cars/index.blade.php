@@ -8,7 +8,7 @@
             </h1>
         </div>
     </div>
-    {{ $cars }}
+    {{ $cars->name }}
     <div class="w-5/6 py-10">
         @foreach ($cars as $car)
         <div class="m-auto">
