@@ -14,14 +14,11 @@ class CarsController extends Controller
      */
     public function index()
     {
-        // $cars = Car::where('name', '=', 'Tesla')
-        // ->firstOrFail();
+        $cars = Car::all();
         
-        print_r(Car::avg('founded'));
-        
-        // return view('cars.index', [
-        //     'cars' =>$cars
-        // ]);
+        return view('cars.index', [
+            'cars' =>$cars
+        ]);
     }
 
     /**
