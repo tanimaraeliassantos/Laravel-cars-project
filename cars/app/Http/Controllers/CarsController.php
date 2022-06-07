@@ -17,7 +17,7 @@ class CarsController extends Controller
         // $cars = Car::where('name', '=', 'Tesla')
         // ->firstOrFail();
         
-        print_r(Car::where('name', '=', 'Audi')->count());
+        print_r(Car::all()->count());
         
         // return view('cars.index', [
         //     'cars' =>$cars
