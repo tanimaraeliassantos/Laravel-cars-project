@@ -15,17 +15,12 @@ class CarsController extends Controller
     public function index()
     {
         $cars = Car::where('name', '=', 'Audi')
-        ->get();
-
-        $cars = Car::chunk(2, function($cars) {
-            foreach($cars as $car) {
-                print_r($car);
-            }
-        });
+        ->firstOrFail();
         
-        // return view('cars.index', [
-        //     'cars' =>$cars
-        // ]);
+        
+        return view('cars.index', [
+            'cars' =>$cars
+        ]);
     }
 
     /**
