@@ -14,7 +14,7 @@ class CarsController extends Controller
      */
     public function index()
     {
-        $cars = Car::where('name', '=', 'Audi')
+        $cars = Car::where('name', '=', 'Tesla')
         ->firstOrFail();
         
         
