@@ -14,7 +14,8 @@ class CarsController extends Controller
      */
     public function index()
     {
-        $cars = Car::all();
+        $cars = Car::where('name', '=', 'Audi')
+        ->get();
         
         return view('cars.index', [
             'cars' =>$cars
