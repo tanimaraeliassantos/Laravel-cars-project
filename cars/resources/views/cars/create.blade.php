@@ -10,5 +10,30 @@
     </div>
 
     <div class="flex justify-center pt-20">
+        <form>
+            <div class="block">
+                <input
+                    type="text"
+                    class="block shadow-5xl mb-10 p-2 w-80 italic
+                    placeholder-gray-400"
+                    name="name"
+                    placeholder="Brand name...">
+
+                <input
+                type="text"
+                class="block shadow-5xl mb-10 p-2 w-80 italic
+                placeholder-gray-400"
+                name="founded"
+                placeholder="Founded...">
+
+                <input
+                type="text"
+                class="block shadow-5xl mb-10 p-2 w-80 italic
+                placeholder-gray-400"
+                name="description"
+                placeholder="Description...">
+
+            </div>
+        </form>
     </div>
 @endsection
