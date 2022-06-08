@@ -10,7 +10,8 @@
     </div>
 
     <div class="flex justify-center pt-20">
-        <form>
+        <form action="/cars" method="POST">
+            @csrf
             <div class="block">
                 <input
                     type="text"
@@ -33,6 +34,11 @@
                 name="description"
                 placeholder="Description...">
 
+                <button
+                    type="submit"
+                    class="bg-green-500 block shadow-5xl mb-10 p-2 w-80 uppercase font-bold">
+                    Submit
+                </button>
             </div>
         </form>
     </div>
