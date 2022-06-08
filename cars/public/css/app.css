@@ -427,11 +427,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 .m-auto {
   margin: auto;
 }
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
 .mt-4 {
   margin-top: 1rem;
 }
 .mb-8 {
   margin-bottom: 2rem;
+}
+.block {
+  display: block;
+}
+.flex {
+  display: flex;
+}
+.w-80 {
+  width: 20rem;
 }
 .w-4\/5 {
   width: 80%;
@@ -439,14 +451,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-5\/6 {
   width: 83.333333%;
 }
-.border-b {
-  border-bottom-width: 1px;
+.justify-center {
+  justify-content: center;
 }
 .border-b-2 {
   border-bottom-width: 2px;
 }
 .border-dotted {
   border-style: dotted;
+}
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
 }
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
@@ -457,6 +473,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .to-gray-200 {
   --tw-gradient-to: #e5e7eb;
+}
+.p-2 {
+  padding: 0.5rem;
 }
 .py-24 {
   padding-top: 6rem;
@@ -469,6 +488,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+.pt-20 {
+  padding-top: 5rem;
 }
 .pt-10 {
   padding-top: 2.5rem;
@@ -500,6 +522,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .italic {
   font-style: italic;
 }
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
@@ -508,8 +534,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+.placeholder-gray-400::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-placeholder-opacity));
+}
+.placeholder-gray-400:-ms-input-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-placeholder-opacity));
+}
+.placeholder-gray-400::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-placeholder-opacity));
 }
 
