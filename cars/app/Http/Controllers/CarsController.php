@@ -45,13 +45,13 @@ class CarsController extends Controller
         // $car->description = $request->input('description');
         // $car->save();
 
-        $car = Car::create([
+        $car = Car::make([
             'name' => $request->input('name'),
             'founded' => $request->input('founded'),
             'description' => $request->input('description')
         ]);
-
-        return redirect("/cars");
+        $car->save();
+        return redirect('/cars');
      }
 
 
@@ -74,7 +74,9 @@ class CarsController extends Controller
      */
     public function edit($id)
     {
-        return view('cars.create');
+        $car = Car::find($id);
+        
+        return view('cars.edit')->with('car', $car);
     }
 
     /**
