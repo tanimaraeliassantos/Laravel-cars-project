@@ -53,7 +53,7 @@ class CarsController extends Controller
 
         return redirect("/cars");
      }
-    
+
 
     /**
      * Display the specified resource.
@@ -74,7 +74,7 @@ class CarsController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('cars.create');
     }
 
     /**
