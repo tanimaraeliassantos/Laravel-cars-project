@@ -36,13 +36,6 @@ Open [http://127.0.0.1:8000](http://127.0.0.1:8000) to view it in your browser.
 
 When making changes, make sure you reload to see it on the page.
 
-You can register a new account at the Register button, at top right.\
-You will be automatically logged in once registered.
-
-Or you can use the following login info:\
-Email Address: user10@email.com\
-Password: user10password
-
 ### `php artisan test`
 
 Launches the test runner. 
