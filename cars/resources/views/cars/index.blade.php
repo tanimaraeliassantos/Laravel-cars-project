@@ -23,7 +23,7 @@
             <div class="float-right">
                 <a 
                     class="border-b-2 pb-2 border-dotted italic text-green-500"
-                    href="cars/{{  $car->id }}/edit">
+                    href="cars/{{ $car->id }}/edit">
                         Edit &rarr;
                 </a>
             </div>
