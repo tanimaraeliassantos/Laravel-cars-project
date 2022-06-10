@@ -5,7 +5,7 @@
 
     Run tailwind with npm run watch to see it live.
 
-Currently working on Creating Model minute 3:00 (tailwind css preset is installed).
+Currently working on introduction to eloquent minute 38:00 (tailwind css preset is installed :prayhands).
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling.
 
