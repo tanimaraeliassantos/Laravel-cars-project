@@ -10,8 +10,9 @@
     </div>
 
     <div class="flex justify-center pt-20">
-        <form action="/cars" method="POST">
+        <form action="/cars/{{  $car->id }}" method="POST">
             @csrf
+            @method('PUT')
             <div class="block">
                 <input
                     type="text"
