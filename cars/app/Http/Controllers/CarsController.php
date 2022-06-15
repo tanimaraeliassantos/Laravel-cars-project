@@ -14,7 +14,7 @@ class CarsController extends Controller
      */
     public function index()
     {
-        $cars = Car::all();
+        $cars = Car::all()->toArray();
 
         return view('cars.index', [
             'cars' =>$cars
