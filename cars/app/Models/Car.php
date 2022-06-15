@@ -15,5 +15,7 @@ class Car extends Model
 
     protected $fillable = ['name', 'founded', 'description'];
 
+    protected $hidden = ['id'];
+
     // protected $timestamps = true;
 }
