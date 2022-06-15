@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@foreach($cars as $car)
+    {{ $car['name'] }}
+@endforeach
+
 @section('content')
     <div class="m-auto w-4/5 py-24">
         <div class='text-center'>
