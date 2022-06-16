@@ -7,7 +7,7 @@
                 {{ $car->name }}
             </h1>
 
-            <p class="text-lg">
+            <p class="text-lg text-gray-700 py-6">
                 {{ $car->headquarter->headquarters }}, {{ $car->headquarter->country }}
             </p>
         </div>
