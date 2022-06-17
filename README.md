@@ -1,6 +1,6 @@
 ## KNOW THY CARS
 
-In a world of multimillionaires with a number of cars available for a leisurable ride, wouldn't it be nice to have an app to keep data on your cars' brands stored nice and tight? Well, fret no more! We have arrived.
+In a world of multimillionaires with a number of cars available for a leisurable ride, wouldn't it be nice to have an app to keep data on your cars stored nice and tight? Well, fret no more! We have arrived.
 
 - Tanimara here you are!
   3:30s Eloquent hasMany and hasOne Relationship from https://www.youtube.com/watch?v=ktv8LF-zVZ4
@@ -13,9 +13,9 @@ In a world of multimillionaires with a number of cars available for a leisurable
 
 For this project you have the following features:
 
-- list of all your cars' brands with name, year of creation and description
-- Create view that allows you to upload new cars' brand to your list
-- Edit view that allows you to edit your cars' brand information
+- list of all your cars with name, year of creation and description
+- Create view that allows you to upload new cars to your list
+- Edit view that allows you to edit your cars information
 - Database that will automatically load new items and updates
 
 ## Technologies
