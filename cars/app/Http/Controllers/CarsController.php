@@ -69,8 +69,6 @@ class CarsController extends Controller
 
         $hq = Headquarter::find($id);
 
-    
-
         return view('cars.show')->with('car', $car);
     }
 
