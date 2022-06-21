@@ -3,7 +3,7 @@
 In a world of multimillionaires with a number of cars available for a leisurable ride, wouldn't it be nice to have an app to keep data on your cars stored nice and tight? Well, fret no more! We have arrived.
 
 - Tanimara here you are!
-  3:30s Eloquent hasMany and hasOne Relationship from https://www.youtube.com/watch?v=ktv8LF-zVZ4
+  6:27s Eloquent Many to Many Relationship from https://www.youtube.com/watch?v=2oFNu_RhTt4
 
   See it live with php artisan serve.
   Run tailwind with npm run watch to see css changes live.
