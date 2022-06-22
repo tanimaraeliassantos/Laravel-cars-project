@@ -64,4 +64,19 @@
 
             </table>
         </div>
-    @endsection
+        <p class="text-left">
+            Product types:
+            @forelse ($car->products as $product)
+                {{ $product->name }}
+
+            @empty
+                <p>
+                    No car product description
+                </p>
+            @endforelse
+        </p>
+    </div>
+
+
+
+@endsection
