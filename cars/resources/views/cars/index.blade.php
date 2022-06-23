@@ -4,6 +4,7 @@
     {{-- {{ $car['name'] }} --}}
 {{-- @endforeach --}}
 
+
 @section('content')
     <div class="m-auto w-4/5 py-24">
         <div class='text-center'>
@@ -53,5 +54,6 @@
             </div>
         @endforeach
     </div>
+
     {{ $cars->links() }}
 @endsection
