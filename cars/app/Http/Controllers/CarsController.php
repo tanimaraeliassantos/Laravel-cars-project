@@ -16,8 +16,9 @@ class CarsController extends Controller
      */
     public function index()
     {
-        $cars = Car::all()->toJson();
-        $cars = json_decode($cars);
+        // $cars = DB::table('cars')->paginate(4);
+
+        $cars = Car::paginate(2);
 
         return view('cars.index', [
             'cars' =>$cars
