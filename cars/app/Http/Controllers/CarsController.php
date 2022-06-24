@@ -48,7 +48,10 @@ class CarsController extends Controller
         // $car->founded = $request->input('founded');
         // $car->description = $request->input('description');
         // $car->save();
+        $test = $request->all();
 
+        dd($test);
+        
         $car = Car::create([
             'name' => $request->input('name'),
             'founded' => $request->input('founded'),
