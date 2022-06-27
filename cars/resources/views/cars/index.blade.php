@@ -54,6 +54,9 @@
             </div>
         @endforeach
     </div>
-
-    {{ $cars->links() }}
-@endsection
+    <div class="m-auto w-1/5 flex">
+        <h1 class="text-3xl uppercase">
+            {!! $cars->links() !!}
+        </h1>
+    </div>
+</d @endsection
