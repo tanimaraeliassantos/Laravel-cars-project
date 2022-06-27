@@ -6,12 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <title>Document</title>
-    <style>
-        .pagination {
-            float: right;
-            margin-top: 10px;
-        }
-    </style>
+
 </head>
 
 <body class="bg-gradient-to-r from-gray-100 to-gray-200">
