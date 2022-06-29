@@ -5,6 +5,8 @@ In a world of multimillionaires with a number of cars available for a leisurable
 - Tanimara here you are!
   6:27s Accessing the Request in Laravel from https://www.youtube.com/watch?v=e-2t2-oMQqg
 
+  Ypu need to get back to it asap.
+
   See it live with php artisan serve.
   Run tailwind with npm run watch to see css changes live.
   Open mysql to tinker with the database.
