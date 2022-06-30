@@ -63,9 +63,12 @@ class CarsController extends Controller
     //     dd('endpoint is cars!');
     //    }
 
-        if ($request->method('post')) {
-            dd('Method is post!');
-        }
+        // if ($request->method('post')) {
+        //     dd('Method is post!');
+        // }
+
+        // Show the URL
+        dd($request->url());
 
         dd($test);
 
