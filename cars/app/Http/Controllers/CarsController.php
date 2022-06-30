@@ -58,9 +58,12 @@ class CarsController extends Controller
         //     dd('Founded has been found!');
         // }
 
-        dd($request->path());
+       //Current path
+       if ($request->is('cars')) {
+        dd('endpoint is cars!');
+       }
 
-        dd($test);
+        // dd($test);
 
         $car = Car::create([
             'name' => $request->input('name'),
