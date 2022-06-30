@@ -52,8 +52,14 @@ class CarsController extends Controller
         //$test = $request->onyl('_token', 'name');
 
         //Has method
-        $test = $request->has('founded');
-        
+        // $test = $request->has('founded');
+
+        // if ($request->has('founded')) {
+        //     dd('Founded has been found!');
+        // }
+
+        dd($request->path());
+
         dd($test);
 
         $car = Car::create([
