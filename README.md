@@ -3,13 +3,11 @@
 In a world of multimillionaires with a number of cars available for a leisurable ride, wouldn't it be nice to have an app to keep data on your cars stored nice and tight? Well, fret no more! We have arrived.
 
 - Tanimara here you are!
-  6:27s Accessing the Request in Laravel from https://www.youtube.com/watch?v=e-2t2-oMQqg
+  Start Basic Form Validation in Laravel from https://www.youtube.com/watch?v=o4utwSsFtsU
 
-  Ypu need to get back to it asap.
-
-  See it live with php artisan serve.
-  Run tailwind with npm run watch to see css changes live.
-  Open mysql to tinker with the database.
+  See it live with `php artisan serve`.
+  Run tailwind with `npm run watch` to see css changes live.
+  Open `mysql` to tinker with the database.
 
 ## Feature
 
