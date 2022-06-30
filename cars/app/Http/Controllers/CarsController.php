@@ -48,8 +48,12 @@ class CarsController extends Controller
         // $car->founded = $request->input('founded');
         // $car->description = $request->input('description');
         // $car->save();
-        $test = $request->onyl('_token', 'name');
+        //Only method
+        //$test = $request->onyl('_token', 'name');
 
+        //Has method
+        $test = $request->has('founded');
+        
         dd($test);
 
         $car = Car::create([
