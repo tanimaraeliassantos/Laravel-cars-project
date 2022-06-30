@@ -48,7 +48,7 @@ class CarsController extends Controller
         // $car->founded = $request->input('founded');
         // $car->description = $request->input('description');
         // $car->save();
-        $test = $request->except('_token');
+        $test = $request->onyl('_token', 'name');
 
         dd($test);
 
