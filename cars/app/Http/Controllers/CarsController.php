@@ -70,9 +70,10 @@ class CarsController extends Controller
         // // Show the URL
         // dd($request->url());
 
-        // Show the IP
-        dd($request->ip());
+        // // Show the IP
+        // dd($request->ip());
 
+        
         dd($test);
 
         $car = Car::create([
