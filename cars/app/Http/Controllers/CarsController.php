@@ -67,8 +67,11 @@ class CarsController extends Controller
         //     dd('Method is post!');
         // }
 
-        // Show the URL
-        dd($request->url());
+        // // Show the URL
+        // dd($request->url());
+
+        // Show the IP
+        dd($request->ip());
 
         dd($test);
 
