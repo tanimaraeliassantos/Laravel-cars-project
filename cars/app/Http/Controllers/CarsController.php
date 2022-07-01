@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Car;
 use App\Models\Headquarter;
 use  App\Models\Product;
+use App\Rules\Uppercase;
 
 class CarsController extends Controller
 {
@@ -54,7 +55,7 @@ class CarsController extends Controller
 
         //Has method
         // $test = $request->has('founded');
-        
+
         // if ($request->has('founded')) {
         //     dd('Founded has been found!');
         // }
@@ -80,7 +81,7 @@ class CarsController extends Controller
         // If it's not valid, throw a ValidationException
 
         $request->validate([
-            'name' => 'required|unique:cars',
+            'name' => new Uppercase,
             'founded' => 'required|integer|min:0|max:2021',
             'description' => 'required'
         ]);
