@@ -48,12 +48,13 @@ class CarsController extends Controller
         // $car->founded = $request->input('founded');
         // $car->description = $request->input('description');
         // $car->save();
+
         //Only method
         //$test = $request->onyl('_token', 'name');
 
         //Has method
         // $test = $request->has('founded');
-
+        
         // if ($request->has('founded')) {
         //     dd('Founded has been found!');
         // }
@@ -72,9 +73,18 @@ class CarsController extends Controller
 
         // // Show the IP
         // dd($request->ip());
-
         
-        dd($test);
+        // dd($test);
+        
+        //If it's valid, it will proceed
+        // If it's not valid, throw a ValidationException
+
+        $request->validate([
+            'name' => 'required|unique:cars',
+            'founded' => 'required|integer|min:0|max:2021',
+            'description' => 'required'
+        ]);
+
 
         $car = Car::create([
             'name' => $request->input('name'),
