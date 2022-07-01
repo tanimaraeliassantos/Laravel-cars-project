@@ -496,6 +496,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .cursor-default {
   cursor: default;
 }
+.list-none {
+  list-style-type: none;
+}
 .content-center {
   align-content: center;
 }
