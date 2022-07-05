@@ -7,6 +7,7 @@ use App\Models\Car;
 use App\Models\Headquarter;
 use  App\Models\Product;
 use App\Rules\Uppercase;
+use App\Http\Requests\CreateValidationRequest;
 
 class CarsController extends Controller
 {
@@ -42,43 +43,9 @@ class CarsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateValidationRequest $request)
     {
-        // $car = new Car;
-        // $car->name = $request->input('name');
-        // $car->founded = $request->input('founded');
-        // $car->description = $request->input('description');
-        // $car->save();
-
-        //Only method
-        //$test = $request->onyl('_token', 'name');
-
-        //Has method
-        // $test = $request->has('founded');
-
-        // if ($request->has('founded')) {
-        //     dd('Founded has been found!');
-        // }
-
-    //    //Current path
-    //    if ($request->is('cars')) {
-    //     dd('endpoint is cars!');
-    //    }
-
-        // if ($request->method('post')) {
-        //     dd('Method is post!');
-        // }
-
-        // // Show the URL
-        // dd($request->url());
-
-        // // Show the IP
-        // dd($request->ip());
-        
-        // dd($test);
-        
-        //If it's valid, it will proceed
-        // If it's not valid, throw a ValidationException
+        $request->validated();
 
         $request->validate([
             'name' => new Uppercase,
@@ -134,8 +101,14 @@ class CarsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(CreateValidationRequest $request, $id)
     {
+        $request->validate([
+            'name' => new Uppercase,
+            'founded' => 'required|integer|min:0|max:2021',
+            'description' => 'required'
+        ]);
+
         $car = Car::where('id', $id)
         ->update([
             'name' => $request->input('name'),
