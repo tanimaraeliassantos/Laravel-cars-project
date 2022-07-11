@@ -2,7 +2,7 @@
 
 In a world of multimillionaires with a number of cars available for a leisurable ride, wouldn't it be nice to have an app to keep data on your cars stored nice and tight? Well, fret no more! We have arrived.
 
-- Tanimara here you are! Remember: code every day, takes the pain of being junior away.
+- Tanimara here you are!
   How to create your own form request in Laravel from https://www.youtube.com/watch?v=wNnLnN3nubc
 
   See it live with `php artisan serve`.
