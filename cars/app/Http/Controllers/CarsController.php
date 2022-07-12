@@ -43,14 +43,18 @@ class CarsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(CreateValidationRequest $request)
-    {
-        $request->validated();
+    public function store(Request $request)
 
+    // Methods we can use on $request
+    //guessExtension()
+    {
+        $test = $request->file('image')->guessExtension();
+        
         $request->validate([
-            'name' => new Uppercase,
+            'name' => 'required',
             'founded' => 'required|integer|min:0|max:2021',
-            'description' => 'required'
+            'description' => 'required',
+            'image' => 'required|mimes:jpg,png,jpeg|max:5048',
         ]);
 
 
@@ -58,6 +62,7 @@ class CarsController extends Controller
             'name' => $request->input('name'),
             'founded' => $request->input('founded'),
             'description' => $request->input('description')
+        
         ]);
     
         return redirect('/cars');
