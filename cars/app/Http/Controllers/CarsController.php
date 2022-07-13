@@ -47,6 +47,18 @@ class CarsController extends Controller
 
     // Methods we can use on $request
     //guessExtension()
+    //getMimeType()
+    //store()
+    //asStore()
+    //storePublicly()
+    //move()
+    //getClientOriginalName()
+    //getClientMimeType()
+    //guessClientExtension()
+    //getSize()
+    //getError()
+    //isValid()
+
     {
         $test = $request->file('image')->guessExtension();
         
@@ -57,11 +69,19 @@ class CarsController extends Controller
             'image' => 'required|mimes:jpg,png,jpeg|max:5048',
         ]);
 
+        $newImageName = time() . '-' . $request->name . '.' .
+        $request->image->extension();
+
+        dd($newImageName);
+
+        $request->image->move(public_path('images'), $newImageName);
+
 
         $car = Car::create([
             'name' => $request->input('name'),
             'founded' => $request->input('founded'),
-            'description' => $request->input('description')
+            'description' => $request->input('description'),
+            'image_path' => $newImageName
         
         ]);
     
