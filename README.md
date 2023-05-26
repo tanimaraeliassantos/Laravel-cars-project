@@ -2,9 +2,6 @@
 
 In a world of multimillionaires with a number of cars available for a leisurable ride, wouldn't it be nice to have an app to keep data on your cars stored nice and tight? Well, fret no more! We have arrived.
 
-- Tanimara here you are!
-This was your last day at onepoint. You did good! Be proud.
-
   How to add image to form in Laravel from https://www.youtube.com/watch?v=IMld7bPw8P4&list=PLFHz2csJcgk_3VJwzVoeyMuC1rdBcfiLv&index=33
 
   See it live with `php artisan serve`.
